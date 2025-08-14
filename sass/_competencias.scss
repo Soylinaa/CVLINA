@@ -1,0 +1,34 @@
+@use './variables' as v;
+
+#competencias {
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    .card-header {
+        &.bg-primary-custom {
+            background: linear-gradient(135deg, v.$color-primary-dark, v.$color-primary) !important;
+        }
+        &.bg-secondary-custom {
+            background: linear-gradient(135deg, v.$color-secondary-dark, v.$color-secondary) !important;
+        }
+    }
+
+    .list-group-item {
+        background-color: transparent;
+        border-bottom: 1px solid #eee;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    .progress-bar {
+        background-color: v.$color-primary-dark;
+    }
+}

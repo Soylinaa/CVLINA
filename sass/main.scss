@@ -1,0 +1,56 @@
+@use './variables';
+@use './personal';
+@use './competencias';
+@use './skills';
+@use './inicio';
+
+/* Importar fuente Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Aplicar fuente a todo el body */
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+/* Variables CSS para colores personalizados */
+:root {
+  --color-primary: #f8bbd9; 
+  --color-secondary: #c8a2c8; 
+  --color-success: #a8e6cf; 
+  --color-primary-dark: #e91e63; 
+  --color-secondary-dark: #9c27b0;    
+  --color-success-dark: #4caf50; 
+}
+
+/* ===== CLASES DE COLORES PERSONALIZADOS ===== */
+.text-primary-custom {
+  color: var(--color-primary-dark) !important;
+}
+
+.text-secondary-custom {
+  color: var(--color-secondary-dark) !important;
+}
+
+.text-success-custom {
+  color: var(--color-success-dark) !important;
+}
+
+.bg-primary-custom {
+  background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary)) !important;
+  color: white !important;
+}
+
+.bg-secondary-custom {
+  background: linear-gradient(135deg, var(--color-secondary-dark), var(--color-secondary)) !important;
+  color: white !important;
+}
+
+.bg-success-custom {
+  background: linear-gradient(135deg, var(--color-success-dark), var(--color-success)) !important;
+  color: white !important;
+}
+
+.bg-light-custom {
+  background: linear-gradient(135deg, #fdf2f8 0%, #f3e8ff 50%, #f0fdf4 100%) !important;
+}
+

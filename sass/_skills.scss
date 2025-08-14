@@ -1,0 +1,27 @@
+@use './variables' as v;
+
+#skills {
+    .skill-item {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        background-color: lighten(v.$color-light, 5%);
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: v.$color-light;
+        }
+
+        i {
+            color: v.$color-primary-dark;
+            font-size: 24px;
+            margin-right: 15px;
+        }
+
+        .skill-name {
+            font-weight: 500;
+        }
+    }
+}

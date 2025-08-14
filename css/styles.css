@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/* Importar fuente Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+/* Rosado clarito */
+/* Lila */
+/* Verde clarito */
+/* Rosado más oscuro */
+/* Lila más oscuro */
+/* Verde más oscuro */
+/* Gris claro */
+#perfil .card {
+  border: 1px solid #c8a2c8;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#perfil .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+#perfil .alert-success-custom {
+  background-color: rgb(227.4241071429, 247.0758928571, 239.7857142857);
+  border-left: 5px solid #4caf50;
+  color: rgb(60.5577689243, 139.4422310757, 63.7450199203);
+}
+
+#competencias .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#competencias .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+#competencias .card-header.bg-primary-custom {
+  background: linear-gradient(135deg, #e91e63, #f8bbd9) !important;
+}
+#competencias .card-header.bg-secondary-custom {
+  background: linear-gradient(135deg, #9c27b0, #c8a2c8) !important;
+}
+#competencias .list-group-item {
+  background-color: transparent;
+  border-bottom: 1px solid #eee;
+}
+#competencias .list-group-item:last-child {
+  border-bottom: none;
+}
+#competencias .progress-bar {
+  background-color: #e91e63;
+}
+
+#skills .skill-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+#skills .skill-item:hover {
+  background-color: #f8f9fa;
+}
+#skills .skill-item i {
+  color: #e91e63;
+  font-size: 24px;
+  margin-right: 15px;
+}
+#skills .skill-item .skill-name {
+  font-weight: 500;
+}
+
+#inicio .hero-content,
+#inicio .hero-content .contact-info a {
+  color: #000 !important;
+}
+
+/* Aplicar fuente a todo el body */
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+/* Variables CSS para colores personalizados */
+:root {
+  --color-primary: #f8bbd9;
+  --color-secondary: #c8a2c8;
+  --color-success: #a8e6cf;
+  --color-primary-dark: #e91e63;
+  --color-secondary-dark: #9c27b0;
+  --color-success-dark: #4caf50;
+}
+
+/* ===== CLASES DE COLORES PERSONALIZADOS ===== */
+.text-primary-custom {
+  color: var(--color-primary-dark) !important;
+}
+
+.text-secondary-custom {
+  color: var(--color-secondary-dark) !important;
+}
+
+.text-success-custom {
+  color: var(--color-success-dark) !important;
+}
+
+.bg-primary-custom {
+  background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary)) !important;
+  color: white !important;
+}
+
+.bg-secondary-custom {
+  background: linear-gradient(135deg, var(--color-secondary-dark), var(--color-secondary)) !important;
+  color: white !important;
+}
+
+.bg-success-custom {
+  background: linear-gradient(135deg, var(--color-success-dark), var(--color-success)) !important;
+  color: white !important;
+}
+
+.bg-light-custom {
+  background: linear-gradient(135deg, #fdf2f8 0%, #f3e8ff 50%, #f0fdf4 100%) !important;
+}
+
+/*# sourceMappingURL=styles.css.map */
